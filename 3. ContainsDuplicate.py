@@ -96,32 +96,32 @@ Time Limit Exceeded when submitting to leetcode.
 '''
 Comparing the timing of Solution_1 and Solution_2:
 '''
-# Solution_1
-# Sample data
-nums = [7,4,6,1,1] * 10000  # Making the list large to see the performance difference
+# # Solution_1
+# # Sample data
+# nums = [7,4,6,1,1] * 10000  # Making the list large to see the performance difference
 
-start = time.time()
-def containsDuplicate1(nums: List[int]) -> bool:
-    unique_elements = set()
-    for i in nums:
-        if i in unique_elements:
-            return True
-        unique_elements.add(i)
-    return False
+# start = time.time()
+# def containsDuplicate1(nums: List[int]) -> bool:
+#     unique_elements = set()
+#     for i in nums:
+#         if i in unique_elements:
+#             return True
+#         unique_elements.add(i)
+#     return False
 
 
-print("containsDuplicate without len: ", containsDuplicate1(nums))
-end = time.time()
-print("Time: ", end - start)
+# print("containsDuplicate without len: ", containsDuplicate1(nums))
+# end = time.time()
+# print("Time: ", end - start)
 
-#Solution_2
-start = time.time()
-def containsDuplicate2(nums: List[int]) -> bool:
-    return len(nums)!=len(set(nums))
+# #Solution_2
+# start = time.time()
+# def containsDuplicate2(nums: List[int]) -> bool:
+#     return len(nums)!=len(set(nums))
 
-print("containsDuplicate with len: ", containsDuplicate2(nums))
-end = time.time()
-print("Time: ", end - start)
+# print("containsDuplicate with len: ", containsDuplicate2(nums))
+# end = time.time()
+# print("Time: ", end - start)
 
 
 # Output:
