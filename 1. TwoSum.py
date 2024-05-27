@@ -1,9 +1,9 @@
 from typing import List
 
-# Solution using dictionary: store each element with its index, check for the diff
-# if diff is there, return the index of element and the current element
-# Time Complexity: O(n), because we only loop through the dictionary one time
-# Space Complexity: O(n), because in the worst case we will store the whole dictionary
+'''Solution using dictionary: store each element with its index, check for the difference,
+if differnce is there, return the index of element and the current element.
+Time Complexity: O(n), because we only loop through the dictionary one time.
+Space Complexity: O(n), because in the worst case we will store the whole dictionary.'''
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         mappings = {}
